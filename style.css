@@ -1,0 +1,95 @@
+* {box-sizing: border-box;}
+
+body {background-color: #252525; text-align: center; font-family: verdana,sans-serif; display: block; margin: 8px; color: white;}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+input[name=submit] {
+  background-color: #4CAF50; // red: d43535 - green: 4CAF50 
+  color: white;
+  padding: 12px 20px;
+  border: 1px;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+  width: 100%;
+  margin-top: 6px;
+}
+
+input[name=submit]:hover {
+  background-color: #45a049; // red: AA2A2A - green: 45a049
+}
+
+
+input[name=reboot] {
+  background-color: #d43535; // red: d43535 - green: 4CAF50
+  color: white;
+  padding: 12px 20px;
+  border: 1px;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+  width: 100%;
+  margin-top: 6px;
+}
+
+input[name=reboot]:hover {
+  background-color: #AA2A2A; // red: AA2A2A - green: 45a049
+}
+
+.container {
+  border-radius: 8px;
+  background-color: #1fa3ec;
+  padding: 20px;
+  max-width: 700px;
+  margin: auto;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 0px;
+  top: 50%;
+  text-align: right;
+  //border: 3px solid white;
+  min-height: 52px;
+}
+
+.col-75 {
+  float: right;
+  width: 75%;
+  margin-top: 6px;
+  top: 50%;
+  //border: 3px solid white;
+  min-height: 52px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .col-25, .col-75, input[type=submit], select, textarea{
+    width: 100%;
+    margin-top: 0;
+        text-align: center;
+  }
+  input[type=submit]{
+    margin-top: 28px;
+  }
+
+}
+
+
+
+.error {color: #FF0000;}

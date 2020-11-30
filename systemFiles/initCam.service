@@ -1,0 +1,21 @@
+[Unit]
+
+Description=auto start stream
+
+After=multi-user.target
+
+[Service]
+
+Type=simple
+
+ExecStart=/opt/rtspStream/initCam.sh
+
+User=pi
+
+WorkingDirectory=/opt/rtspStream
+
+Restart=on-failure
+
+[Install]
+
+WantedBy=multi-user.target

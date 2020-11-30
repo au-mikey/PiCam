@@ -1,0 +1,105 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>PiCam Config</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>PiCam</h1>
+    <h2>Configuration</h2>
+    <div class="container">
+	
+		<form method="post">
+			<div class="row">
+				<h2>Video Settings</h2>
+			</div>
+			<div class="row">
+				<div class="col-25"><p>Resolution:</p></div>
+				<div class="col-75">
+					<select id="resolution" name="resolution">
+{resMenu}
+					</select>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-25"><p>Rotation:</p></div>
+				<div class="col-75">
+					<select id="rotation" name="rotation">
+{rotationMenu}
+					</select>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-25"><p>Frames per second:</p></div>
+				<div class="col-75">
+					<input type="text" name="fps" value={fps}>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-25"><p>Bitrate:</p></div>
+				<div class="col-75">
+					<select id="br" name="br">
+{bitrateMenu}
+					</select>
+				</div>
+			</div>
+			<div class="row">
+				<h2>Stream Settings</h2>
+			</div>
+			<div class="row">
+				<div class="col-25"><p>Port:</p></div>
+				<div class="col-75">
+					<input type="text" name="port" value={port}>
+				</div>
+			</div>				
+			<div class="row">
+				<div class="col-25"><p>Directory:</p></div>
+				<div class="col-75">
+					<input type="text" name="directory" value={directory}>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-25"><p>Protocol:</p></div>
+				<div class="col-75">
+					<select id="protocol" name="protocol">
+{protocolMenu}
+					</select>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-75">
+					<input type="submit" name="submit" value="Submit">
+				</div>
+			</div>
+		</form>
+		
+		<form method="post">
+			<div class="row">
+				<div class="col-75">
+					<input type="submit" name="reboot" value="Reboot">
+				</div>
+			</div>
+		</form>
+		
+		<div class="row">
+			<div class="col-25">
+				<p>Links to stream:</p>
+			</div>
+			<div class="col-75">
+				<p>{link0}</p>
+				<p>{link1}</p>
+			</div>
+		</div>
+		
+		<div class="row">
+			<div class="col-25">
+				<p>Operating temp:</p>
+			</div>
+			<div class="col-75">
+				<p>{temp}&#186C</p>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
