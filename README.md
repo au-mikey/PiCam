@@ -1,2 +1,2 @@
 # PiCam
-Enables the raspberry pi camera module with a web interface for configuration purposes
+Enables the Raspberry Pi camera module RTSP stream and includes a simple web interface for configuration purposes.
