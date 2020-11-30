@@ -1,0 +1,21 @@
+[Unit]
+
+Description=auto start rtspStream web server
+
+After=multi-user.target
+
+[Service]
+
+Type=simple
+
+ExecStart=python3.7 /opt/rtspStream/rtspStream.py
+
+User=pi
+
+WorkingDirectory=/opt/rtspStream
+
+Restart=on-failure
+
+[Install]
+
+WantedBy=multi-user.target
