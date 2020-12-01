@@ -8,7 +8,7 @@ After=multi-user.target
 
 Type=simple
 
-ExecStart=python3.7 /opt/PiCam/rtspStream.py
+ExecStart=sudo python3.7 /opt/PiCam/rtspStream.py
 
 User=pi
 
