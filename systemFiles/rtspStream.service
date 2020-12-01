@@ -8,11 +8,11 @@ After=multi-user.target
 
 Type=simple
 
-ExecStart=python3.7 /opt/rtspStream/rtspStream.py
+ExecStart=python3.7 /opt/PiCam/rtspStream.py
 
 User=pi
 
-WorkingDirectory=/opt/rtspStream
+WorkingDirectory=/opt/PiCam
 
 Restart=on-failure
 
