@@ -1,5 +1,6 @@
 #!/bin/bash
 
+sudo apt-get install vlc -y
 sudo chmod +x initCam.sh
 sudo chmod +x watchdog/watchdog.sh
 sudo cp systemFiles/* /etc/systemd/system/
