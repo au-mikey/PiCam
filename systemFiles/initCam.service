@@ -8,11 +8,11 @@ After=multi-user.target
 
 Type=simple
 
-ExecStart=/opt/rtspStream/initCam.sh
+ExecStart=/opt/PiCam/initCam.sh
 
 User=pi
 
-WorkingDirectory=/opt/rtspStream
+WorkingDirectory=/opt/PiCam
 
 Restart=on-failure
 
