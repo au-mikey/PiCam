@@ -2,7 +2,7 @@
 
 target=$1
 gateway=$(route -n | grep 'UG[ \t]' | awk '{print $2}')
-logfile=/opt/rtspStream/watchdog/logs/test_connection.log
+logfile=/opt/PiCam/watchdog/watchdog.log
 
 if [ -z "$target" ]
 then
