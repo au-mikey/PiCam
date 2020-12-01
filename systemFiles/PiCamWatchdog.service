@@ -1,0 +1,21 @@
+[Unit]
+
+Description=auto start PiCam watchdog
+
+After=multi-user.target
+
+[Service]
+
+Type=simple
+
+ExecStart=/opt/PiCam/watchdog/watchdog.sh
+
+User=pi
+
+WorkingDirectory=/opt/PiCam/watchdog
+
+Restart=on-failure
+
+[Install]
+
+WantedBy=multi-user.target
